@@ -1,5 +1,14 @@
 #master-page {
-	min-width: 0;
+	min-width: 10px;
+}
+
+#site-root {
+	width: 100vw;
+	min-width: 100vw;
+}
+
+#c1dmp  {
+	width: 100vw;
 }
 
 :root {
