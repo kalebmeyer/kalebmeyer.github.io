@@ -69,14 +69,6 @@ body {
 	}
 }
 
-@media screen and (max-width: 574px) {
-	.header-container {
-		justify-content: center;
-	}	
-	.portfolio-image {
-		width: 100%;
-	}
-}
 
 .centered {
 	display: flex;
@@ -195,4 +187,13 @@ header {
 
 .portfolio-heading {
 	margin-top: 20vh;
+}
+
+@media screen and (max-width: 574px) {
+	.header-container {
+		justify-content: center;
+	}	
+	.portfolio-image {
+		width: 100%;
+	}
 }
