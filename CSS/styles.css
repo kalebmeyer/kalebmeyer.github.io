@@ -67,9 +67,12 @@ body {
 	.h1 {
 		word-wrap: break-word;
 	}
+}
+
+@media screen and (max-width: 574px) {
 	.header-container {
 		justify-content: center;
-	}
+	}	
 }
 
 .centered {
