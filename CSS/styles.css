@@ -73,6 +73,9 @@ body {
 	.header-container {
 		justify-content: center;
 	}	
+	.portfolio-image {
+		width: 100%;
+	}
 }
 
 .centered {
