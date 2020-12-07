@@ -67,6 +67,9 @@ body {
 	.h1 {
 		word-wrap: break-word;
 	}
+	.header-container {
+		justify-content: center;
+	}
 }
 
 .centered {
