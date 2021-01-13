@@ -147,12 +147,13 @@ header {
 .button-2 {
 	font-size: 14px;
 	text-decoration: none;
-	color: black;
-	padding: 12px 23px;
-	background-color: white;
-	border-radius: 8px;
+	color: white;
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+.button-2:hover {
+	text-decoration: underline;
 }
 
 .fade-in {
