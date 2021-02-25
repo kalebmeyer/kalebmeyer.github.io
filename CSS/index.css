@@ -1,0 +1,149 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;	
+    margin:0;
+    padding:0;
+    color:#fff;
+}
+h2 {
+	font-size: 36px;
+}
+p {
+	color: #fff;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #fff;
+	background:#fff;
+	background: rgba(255,255,255, 0.0);
+	transition: .4s ease;	
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(255,255,255, 0.2);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #fff;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+	color: #000;
+}
+#menu li:hover > a {
+	color: #000;
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	position:fixed;
+	top:8%;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+.hero-logo {
+	width: 250px;
+}
+.hero-image {
+	width: 250px;
+}
+.double-column {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 100%;
+}
+.double-column > p {
+	padding: 0;
+	margin: 15px 30px;
+	width: auto;
+	max-width: 30%;
+	text-align: left;	
+}
