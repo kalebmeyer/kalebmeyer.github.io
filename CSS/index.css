@@ -162,7 +162,7 @@ button {
 }
 .hero-image {
 	width: 350px;
-	margin: 15px 30px;
+	padding: 15px 30px;
 }
 .double-column {
 	display: flex;
