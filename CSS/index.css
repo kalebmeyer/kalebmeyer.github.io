@@ -351,4 +351,29 @@ h1{
 		flex-direction: column;
 		align-items: center;
 	}
+	h2 {
+		font-size: 81px;
+	}
+	.intro p {
+		font-size: 48px;
+	}
+	a {
+		font-size: 28px;
+	}
+	.portfolio-link {
+		font-size: 36px;
+		width: 250px;
+		padding: 18px 36px;
+	}
+	.form {
+		width: 100vw;
+		font-size: 28px;
+		align-items: center;
+	}
+	.form > * {
+		width: 60%;
+		max-width: none;
+		font-size: 28px;
+		padding: 20px;
+	}
 }
