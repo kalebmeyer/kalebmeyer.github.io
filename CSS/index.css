@@ -141,11 +141,18 @@ h1{
 	font-size: 15px;
 	border-radius: 5px;
 	border-style: none;
-	border: 1px solid #A5A5A5;
-	background-color: white;
+	color: #fff;
+	background-color: rgba(255,255,255,0.2);
 	max-width: 350px;
 	max-height: 100px;
 	margin: 3px 0;
+	transition: .4s ease;
+}
+.input::placeholder, .textarea::placeholder, .button::placeholder {
+	color: #fff;
+}
+.input:active, .textarea:active, .button:active  {
+	background-color: rgba(255,255,255,0.8);
 }
 .textarea {
 	height: 100px;	
