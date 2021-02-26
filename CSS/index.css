@@ -128,6 +128,11 @@ p{
 	padding: 0;
 	margin:0;
 }
+form {
+	display: flex;
+	flex-direction: column;
+	appearance: none;
+}
 .hero-logo {
 	width: 250px;
 }
