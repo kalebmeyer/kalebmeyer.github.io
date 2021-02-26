@@ -343,7 +343,7 @@ h1{
 		height: auto;
 	}
 	.double-column > p {
-		width: auto;
+		width: 60%;
 		max-width: 100%;
 	}
 	.portfolio-container {
