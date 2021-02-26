@@ -182,9 +182,14 @@ h1{
 	max-width: 30%;
 	text-align: left;	
 }
-.return-link {
+.return-link, .button-2 {
 	margin-top: 20px;
 	font-size: 20px;
+	color: #fff;
+}
+#portfolio-link, .button-2 {
+	margin-bottom: 20px;
+}
 }
 .return-link:hover {
 	text-decoration: underline;
@@ -208,4 +213,87 @@ h1{
 .portfolio-link:hover {
 	background-color: rgba(255,255,255,0.8);
 	color: #000;
+}
+.fade-in {
+	animation-name: fade-in;
+	animation-delay: 0s;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+@keyframes fade-in {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+.portfolio-list-item {
+	text-decoration: none;
+	color: white;
+	font-size: 29px;
+	line-height: 0px;
+	margin-top: 12px;
+}
+
+.portfolio-image {
+	width: 500px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.portfolio-page-container {
+
+}
+
+.portfolio-heading {
+	margin-top: 20vh;
+	margin-bottom: 5vh;
+}
+
+.footer-cta {
+	font-size: 12px;
+	color: white;
+}
+
+.footer-socials {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+}
+
+.footer-icon {
+	width: 25px;
+	margin: 5px 7px 15px 7px;
+}
+.page {
+	height: 100vh;
+	min-height: 100vh;
+}
+
+.container {
+	padding: 0px 10em;
+}
+
+@media screen and (max-width: 980px) {
+	.container {
+		padding: 0 5em;
+	}
+	.h1 {
+		word-wrap: break-word;
+	}
+}
+
+
+.centered {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.centered-2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap
 }

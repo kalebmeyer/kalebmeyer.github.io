@@ -1,60 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <link rel="icon" href="favicon.png"/>
-    <title>Kaleb Meyer. | Portfolio.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kaleb Meyer.</title>
+    <link rel="stylesheet" type="text/css" href="CSS/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+  <link rel="icon" href="favicon.png"/>
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
 </head>
 <body>
-    <header class="container centered">
-        <div class="header">
-            <a class="header-container" href="index.html">
-                <img class="header-icon" src="Images/logo.png">
-                <p class="h2">Kaleb Meyer.</p>
-            </a>
+
+<ul id="menu">
+    <li ><a href="https://kalebmeyer.com/#firstPage">Home.</a></li>
+    <li ><a href="https://kalebmeyer.com/#secondPage">About Me.</a></li>
+    <li class="active"><a href="https://kalebmeyer.com/#3rdPage">Portfolio.</a></li>
+  <li ><a href="https://kalebmeyer.com/#4thPage">Contact.</a></li>
+</ul>
+
+<div id="fullpage">
+    <div class="section" id="section2">
+        <div class="intro">
+            <h2>Portfolio.</h2>
+      <div class="portfolio-container">
+            <a href="https://kalebmeyer.com/apparel" class="portfolio-link">Apparel</a>
+        <a href="https://kalebmeyer.com/motion-design" class="portfolio-link">Motion</a>
+        <a href="https://kalebmeyer.com/logos" class="portfolio-link">Logos</a>
+        <a href="https://kalebmeyer.com/social-media" class="portfolio-link">Social Media</a>
+      </div>
         </div>
-    </header>
-
-    <!-- Main Start -->
-
-<main class="page container centered">
-    <div class="centered no-underline landing-page no-underline fade-in" style="flex-direction: column;">
-        <a class="no-underline" href="./apparel.html">
-            <p class="portfolio-list-item">Apparel.</p>
-        </a>
-        <a class="no-underline" href="./social-media.html">
-            <p class="portfolio-list-item">Social Media.</p>
-        </a>
-        <a class="no-underline" href="./logos.html">
-            <p class="portfolio-list-item">Logos.</p>
-        </a>
-        <a class="no-underline" href="./promotional.html">
-            <p class="portfolio-list-item">Promotional.</p>
-        </a>
-        <a class="no-underline" href="./photos.html">
-            <p class="portfolio-list-item">Photos.</p>
-        </a>
     </div>
-</main>
+</div>
 
-    <!-- Footer Start -->
 
-    <footer>
-        <div class="centered" style="flex-direction: column;">
-            <p class="footer-cta">
-                Like what you see? Contact me.
-            </p>
-            <div class="footer-socials">
-                <a href="https://instagram.com/thekalebmeyer">
-                    <img class="footer-icon" src="Images/Icons/Instagram.png">
-                </a>
-                <a href="https://twitter.com/thekalebmeyer">
-                    <img class="footer-icon" src="Images/Icons/Twitter.png">
-                </a>
-            </div>
-        </div>
-    </footer>
+<script type="text/javascript" src="JS/fullpage.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      sectionsColor: ['rgba(0,0,0,0)', 'rgba(0,0,0,0)', 'rgba(0,0,0,0)', 'rgba(0,0,0,0)', 'rgba(0,0,0,0)'],
+      anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+      menu: '#menu',
+      continuousVertical: true,
+      afterLoad: function(anchorLink, index){
+            console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+        },
+        onLeave: function(index, nextIndex, direction){
+            console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+
+        },
+    });
+</script>
+
 </body>
 </html>
