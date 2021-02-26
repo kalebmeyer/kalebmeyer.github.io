@@ -4,6 +4,8 @@
 	<title>Kaleb Meyer.</title>
 	<link rel="stylesheet" type="text/css" href="CSS/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="CSS/index.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <link rel="icon" href="favicon.png"/>
 
 	<!--[if IE]>
@@ -13,6 +15,10 @@
 	<![endif]-->
 </head>
 <body>
+
+<div class="loader-wrapper">  
+    <img id="loader-image" class="loader-image" src="Images/Logo 2.svg">
+</div>
 
 <ul id="menu">
 	<li data-menuanchor="firstPage" class="active"><a href="https://kalebmeyer.com/#firstPage">Home.</a></li>
@@ -84,6 +90,18 @@ let's work!</p>
 
         },
     });
+</script>
+
+<script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        }
+        );
+</script>
+<script>
+  $(window).on("load",function(){
+    $(".loader-image").animate({width: '0%'});
+}); 
 </script>
 
 </body>
