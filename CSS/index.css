@@ -132,12 +132,37 @@ form {
 	display: flex;
 	flex-direction: column;
 	appearance: none;
+	-webkit-appearance: none;
+	border-style: none;
+	width: 350px;
+	padding: 0;
+	margin: 15px 30px;
+}
+input, textarea, button {
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	border-style: none;
+	border: 1px solid #A5A5A5;
+	background-color: white;
+	max-width: 350px;
+	max-height: 100px;
+	margin: 3px 0;
+}
+textarea {
+	height: 100px;	
+	width: 328px;
+	resize: none;
+}
+button {
+	width: initial;
 }
 .hero-logo {
 	width: 250px;
 }
 .hero-image {
 	width: 350px;
+	margin: 15px 30px;
 }
 .double-column {
 	display: flex;
