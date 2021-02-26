@@ -182,7 +182,7 @@ h1{
 	max-width: 30%;
 	text-align: left;	
 }
-.return-link, .button-2 {
+.return-link {
 	margin-top: 20px;
 	font-size: 20px;
 	color: #fff;
@@ -199,7 +199,7 @@ h1{
 	align-content: center;
 	justify-content: center;
 }
-.portfolio-link {
+.portfolio-link, .button-2 {
 	display: inline-block;
 	padding: 9px 18px;
 	margin: 15px;
@@ -210,7 +210,14 @@ h1{
 	color: #fff;
 	transition: .4s ease
 }
+.button-2 {
+	width: auto;
+}
 .portfolio-link:hover {
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
+}
+.button-2:hover {
 	background-color: rgba(255,255,255,0.8);
 	color: #000;
 }
