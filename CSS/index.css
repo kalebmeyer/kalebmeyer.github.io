@@ -380,4 +380,7 @@ h1{
 		height: auto;
 		flex-wrap: wrap;
 	}
+	.loader-image {
+		width: 40%;
+	}
 }
