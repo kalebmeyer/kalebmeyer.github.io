@@ -376,4 +376,8 @@ h1{
 		font-size: 28px;
 		padding: 20px;
 	}
+	#menu {
+		height: auto;
+		flex-wrap: wrap;
+	}
 }
