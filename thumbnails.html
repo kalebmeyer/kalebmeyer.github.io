@@ -4,8 +4,6 @@
     <title>Kaleb Meyer.</title>
     <link rel="stylesheet" type="text/css" href="CSS/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="CSS/index.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   <link rel="icon" href="favicon.png"/>
 
     <!--[if IE]>
@@ -16,14 +14,10 @@
 </head>
 <body>
 
-<div class="loader-wrapper">  
-    <img id="loader-image" class="loader-image" src="Images/Logo 2.svg">
-</div>
-
 <ul id="menu">
     <li ><a href="https://kalebmeyer.com/#firstPage">Home.</a></li>
     <li ><a href="https://kalebmeyer.com/#secondPage">About Me.</a></li>
-    <li class="active"><a href="https://kalebmeyer.com/portfolio">Portfolio.</a></li>
+    <li class="active"><a href="https://kalebmeyer.com/#3rdPage">Portfolio.</a></li>
   <li ><a href="https://kalebmeyer.com/#4thPage">Contact.</a></li>
 </ul>
 
@@ -31,19 +25,13 @@
 
 <main class="container fade-in">
     <div class="no-underline centered" style="flex-direction: column;">
-        <p class="h2 portfolio-heading">Logos.</p>
+        <p class="h2 portfolio-heading">Thumbnails.</p>
 
-        <img class="portfolio-image" src="Images/Logos/celestial logo.png">
-        <img class="portfolio-image" src="Images/Logos/vert logo.png">
-        <img id="inverted" class="portfolio-image" src="Images/Logos/loosid logo.png">
-        <img id="inverted" class="portfolio-image" src="Images/Logos/nxj logo.png">
-        <img id="inverted" class="portfolio-image" src="Images/Logos/goaty logo.png">
-        <img class="portfolio-image" src="Images/Logos/fear_logo_png.png">
-        <img class="portfolio-image" src="Images/Logos/goaty_logo_png.png">
-        <img class="portfolio-image" src="Images/Logos/quez_logo_png.png">
-        <img class="portfolio-image" src="Images/Logos/cyclone_logo_png.png">
-        <img class="portfolio-image" src="Images/Logos/bomb_logo_png.png">
-        <img class="portfolio-image" src="Images/Logos/mizz_logo.png">
+        <img class="portfolio-image" src="Images/Thumbnails/xtra_setup_tour_pt_2.png">
+        <img class="portfolio-image" src="Images/Thumbnails/quez_thumbnail.png">
+        <img class="portfolio-image" src="Images/Thumbnails/papaala_interview_thumbnail.png">
+        <img class="portfolio-image" src="Images/Thumbnails/savvy_thumbnail.png">
+        <img class="portfolio-image" src="Images/Thumbnails/kaleb_interview_thumbnail.png">
 
         <a class="button-2 fade-in" href="./portfolio.html">Back To Portfolio →</a>
     </div>
@@ -67,19 +55,5 @@
             </div>
         </div>
     </footer>
-
-
-<script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").delay(500).fadeOut("slow");
-        }
-        );
-</script>
-<script>
-  $(window).on("load",function(){
-    $(".loader-image").delay(500).animate({width: '0%'});
-}); 
-</script>
-    
 </body>
 </html>
